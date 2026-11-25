@@ -1,0 +1,69 @@
+# ------------------------------
+# Data files
+# ------------------------------
+
+# Raw, intermediate, and full processed datasets: never commit
+data/raw/
+data/interim/
+data/processed/
+
+# Survey data: never commit individual responses
+data/survey/
+
+# Large or generated data files
+*.parquet
+*.db
+*.sqlite
+*.duckdb
+
+# Do not commit raw PEGI exports
+PEGI.txt
+pegi_raw*.txt
+*_raw.csv
+
+# ------------------------------
+# Python and Jupyter
+# ------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ------------------------------
+# Secrets and credentials
+# ------------------------------
+
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+
+# ------------------------------
+# OS and IDE
+# ------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+
+# ------------------------------
+# Generated outputs
+# ------------------------------
+
+outputs/figures/*.png
+outputs/figures/*.jpg
+outputs/figures/*.svg
+outputs/tables/*.csv
+outputs/tables/*.xlsx
